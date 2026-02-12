@@ -20,7 +20,7 @@ const translations = {
 };
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('zh');
+  const [language, setLanguageState] = useState<Language>('en');
 
   // Initialize language from localStorage on mount
   useEffect(() => {

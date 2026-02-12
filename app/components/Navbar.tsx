@@ -106,11 +106,11 @@ export default function Navbar() {
               },
             }}
           >
-            <ToggleButton value="zh" sx={{ px: 2, py: 0.5 }}>
-              中文
-            </ToggleButton>
             <ToggleButton value="en" sx={{ px: 2, py: 0.5 }}>
               EN
+            </ToggleButton>
+            <ToggleButton value="zh" sx={{ px: 2, py: 0.5 }}>
+              CN
             </ToggleButton>
           </ToggleButtonGroup>
         </Toolbar>

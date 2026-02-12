@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "Personal Website | Portfolio",
+    "description": "My personal website and portfolio"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -10,7 +14,7 @@
   "hero": {
     "title": "Welcome to My World",
     "subtitle": "Senior application developer | Creative Thinker",
-    "description": "I craft beautiful, functional digital experiences.\nWith expertise in modern web technologies,\nI build scalable solutions that drive business success.",
+    "description": "I craft intelligent digital experiences powered by AI.\nWith expertise in modern web technologies and artificial intelligence,\nI build innovative, scalable solutions that transform businesses.",
     "cta": "Explore My Work",
     "scroll": "Scroll to discover more"
   },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import DynamicTitle from "./components/DynamicTitle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "个人网站 | 个人作品集",
-  description: "我的个人网站和作品集",
+  title: "Personal Website | Portfolio",
+  description: "My personal website and portfolio",
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="zh">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Providers>
+          <DynamicTitle />
           {children}
         </Providers>
       </body>
