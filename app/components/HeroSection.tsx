@@ -61,12 +61,13 @@ export default function HeroSection() {
               position: 'absolute',
               right: 0,
               top: 0,
-              width: '65%',
+              width: '55%',
               height: '100%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               zIndex: 1,
+              transform: 'translateX(-15%)',
             }}
           >
             {/* 照片背景装饰 */}
@@ -86,6 +87,8 @@ export default function HeroSection() {
                 position: 'relative',
                 width: '100%',
                 height: '100%',
+                maxWidth: '450px',
+                maxHeight: '550px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
