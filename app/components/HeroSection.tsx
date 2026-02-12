@@ -17,7 +17,7 @@ export default function HeroSection() {
   return (
     <Box
       sx={{
-        minHeight: '100vh',
+        minHeight: { xs: 'auto', sm: '50vh', md: '60vh', lg: '100vh' },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -54,19 +54,31 @@ export default function HeroSection() {
       }}
     >
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
-        <Box sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', position: 'relative' }}>
-          {/* 背景图片 - 占据2/3空间 */}
+        <Box
+          sx={{
+            minHeight: { xs: 'auto', sm: '50vh', md: '60vh', lg: '100vh' },
+            display: 'flex',
+            alignItems: 'center',
+            position: 'relative',
+            flexDirection: { xs: 'column', md: 'row' },
+            justifyContent: { xs: 'center', md: 'flex-start' },
+            gap: { xs: 4, md: 0 },
+            py: { xs: 10, md: 0 },
+          }}
+        >
+          {/* 图片部分 */}
           <Box
             sx={{
-              position: 'absolute',
-              right: 0,
-              top: 0,
-              width: '55%',
-              height: '100%',
+              position: { xs: 'relative', md: 'absolute' },
+              right: { md: 0 },
+              top: { md: 0 },
+              width: { xs: '100%', sm: '80%', md: '55%' },
+              height: { xs: 'auto', md: '100%' },
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               zIndex: 1,
+              order: { xs: 1, md: 2 },
             }}
           >
             {/* 照片背景装饰 */}
@@ -77,17 +89,18 @@ export default function HeroSection() {
                 height: '100%',
                 background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.05) 100%)',
                 borderRadius: '20px',
+                display: { xs: 'none', md: 'block' },
               }}
             />
-            
+
             {/* 照片容器 */}
             <Box
               sx={{
                 position: 'relative',
                 width: '100%',
-                height: '100%',
-                maxWidth: '650px',
-                maxHeight: '550px',
+                height: { xs: 'auto', md: '100%' },
+                maxWidth: { xs: '100%', md: '650px' },
+                maxHeight: { xs: '400px', md: '550px' },
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -110,18 +123,21 @@ export default function HeroSection() {
             </Box>
           </Box>
 
-          {/* 左侧文字部分 - 覆盖在图片上 */}
+          {/* 文字部分 */}
           <Box
             sx={{
               position: 'relative',
               zIndex: 2,
-              maxWidth: '55%',
-              paddingRight: 4,
+              maxWidth: { xs: '100%', md: '55%' },
+              paddingRight: { xs: 0, md: 4 },
+              order: { xs: 2, md: 1 },
+              width: '100%',
             }}
           >
             <Box
               sx={{
                 animation: 'fadeInUp 1s ease-out',
+                textAlign: { xs: 'center', md: 'left' },
                 '@keyframes fadeInUp': {
                   from: {
                     opacity: 0,
@@ -137,7 +153,7 @@ export default function HeroSection() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: '2.5rem', md: '3.5rem' },
+                  fontSize: { xs: '2rem', sm: '2.5rem', md: '3.5rem' },
                   fontWeight: 800,
                   marginBottom: 2,
                   letterSpacing: '-0.02em',
@@ -149,7 +165,7 @@ export default function HeroSection() {
               <Typography
                 variant="h4"
                 sx={{
-                  fontSize: { xs: '1.1rem', md: '1.5rem' },
+                  fontSize: { xs: '1rem', sm: '1.1rem', md: '1.5rem' },
                   fontWeight: 400,
                   marginBottom: 3,
                   opacity: 0.9,
@@ -161,7 +177,7 @@ export default function HeroSection() {
               <Typography
                 variant="body1"
                 sx={{
-                  fontSize: '1rem',
+                  fontSize: { xs: '0.9rem', md: '1rem' },
                   opacity: 0.8,
                   lineHeight: 1.8,
                   marginBottom: 3,
@@ -171,7 +187,15 @@ export default function HeroSection() {
                 {t.hero.description}
               </Typography>
 
-              <Stack direction="row" spacing={2} sx={{ marginBottom: 4 }}>
+              <Stack
+                direction={{ xs: 'column', sm: 'row' }}
+                spacing={2}
+                sx={{
+                  marginBottom: 4,
+                  width: { xs: '100%', sm: 'auto' },
+                  justifyContent: { xs: 'center', md: 'flex-start' },
+                }}
+              >
                 <Button
                   component="a"
                   href="/#experience"
@@ -184,6 +208,7 @@ export default function HeroSection() {
                     padding: '12px 32px',
                     fontSize: '1rem',
                     textTransform: 'none',
+                    width: { xs: '100%', sm: 'auto' },
                     '&:hover': {
                       backgroundColor: '#ff5520',
                       transform: 'translateY(-2px)',
@@ -204,6 +229,7 @@ export default function HeroSection() {
                     padding: '12px 32px',
                     fontSize: '1rem',
                     textTransform: 'none',
+                    width: { xs: '100%', sm: 'auto' },
                     '&:hover': {
                       backgroundColor: 'rgba(255, 107, 53, 0.1)',
                     },
@@ -213,7 +239,14 @@ export default function HeroSection() {
                 </Button>
               </Stack>
 
-              <Stack direction="row" spacing={2}>
+              <Stack
+                direction="row"
+                spacing={{ xs: 1, sm: 2 }}
+                sx={{
+                  flexWrap: 'wrap',
+                  justifyContent: { xs: 'center', md: 'flex-start' },
+                }}
+              >
                 <Button
                   component="a"
                   href="https://github.com/yc09od"
@@ -223,6 +256,7 @@ export default function HeroSection() {
                     color: '#ff6b35',
                     fontWeight: 500,
                     textTransform: 'none',
+                    fontSize: { xs: '0.875rem', sm: '1rem' },
                     '&:hover': {
                       color: '#ff8555',
                     },
@@ -239,6 +273,7 @@ export default function HeroSection() {
                     color: '#ff6b35',
                     fontWeight: 500,
                     textTransform: 'none',
+                    fontSize: { xs: '0.875rem', sm: '1rem' },
                     '&:hover': {
                       color: '#ff8555',
                     },
@@ -254,6 +289,7 @@ export default function HeroSection() {
                     color: '#ff6b35',
                     fontWeight: 500,
                     textTransform: 'none',
+                    fontSize: { xs: '0.875rem', sm: '1rem' },
                     '&:hover': {
                       color: '#ff8555',
                     },
