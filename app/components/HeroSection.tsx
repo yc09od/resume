@@ -173,6 +173,8 @@ export default function HeroSection() {
 
               <Stack direction="row" spacing={2} sx={{ marginBottom: 4 }}>
                 <Button
+                  component="a"
+                  href="/#experience"
                   variant="contained"
                   size="large"
                   sx={{
@@ -191,6 +193,8 @@ export default function HeroSection() {
                   {t.hero.cta}
                 </Button>
                 <Button
+                  component="a"
+                  href="/#contact"
                   variant="outlined"
                   size="large"
                   sx={{
