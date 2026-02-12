@@ -44,10 +44,8 @@
     "title": "Skills & Expertise",
     "frontend": "Frontend Development",
     "backend": "Backend Development",
-    "database": "Database & Data Management",
-    "tools": "Tools & Infrastructure",
-    "data": "Data & Visualization",
-    "languages": "Languages & Methodologies",
+    "database": "Database & Cloud",
+    "tools": "Tools & DevOps",
     "otherSkills": "Other Skills"
   },
   "experience": {

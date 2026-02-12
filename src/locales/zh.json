@@ -44,10 +44,8 @@
     "title": "技能与专业知识",
     "frontend": "前端开发",
     "backend": "后端开发",
-    "database": "数据库与数据管理",
-    "tools": "工具与基础设施",
-    "data": "数据与可视化",
-    "languages": "语言与方法论",
+    "database": "数据库与云服务",
+    "tools": "工具与开发运维",
     "otherSkills": "其他技能"
   },
   "experience": {
