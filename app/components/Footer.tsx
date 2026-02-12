@@ -10,7 +10,7 @@ import {
   Divider,
   IconButton,
 } from '@mui/material';
-import { GitHub, LinkedIn, Twitter, Facebook } from '@mui/icons-material';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function Footer() {
@@ -19,23 +19,13 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: GitHub,
-      href: 'https://github.com',
+      href: 'https://github.com/yc09od',
       label: 'GitHub',
     },
     {
       icon: LinkedIn,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/yanglong-cui-b389a0b7/',
       label: 'LinkedIn',
-    },
-    {
-      icon: Twitter,
-      href: 'https://twitter.com',
-      label: 'Twitter',
-    },
-    {
-      icon: Facebook,
-      href: 'https://facebook.com',
-      label: 'Facebook',
     },
   ];
 
@@ -65,9 +55,9 @@ export default function Footer() {
               {language === 'zh' ? '关于我' : 'About Me'}
             </Typography>
             <Typography variant="body2" sx={{ color: '#666', lineHeight: 1.8 }}>
-              {language === 'zh' 
-                ? '全栈开发者，专注于使用现代技术构建高质量的web应用程序。'
-                : 'Full Stack Developer, focused on building high-quality web applications using modern technologies.'}
+              {language === 'zh'
+                ? '高级应用开发者，专注于使用现代技术构建高质量的web应用程序。'
+                : 'Senior application developer, focused on building high-quality web applications using modern technologies.'}
             </Typography>
           </Grid>
 

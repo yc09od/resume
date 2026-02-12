@@ -67,7 +67,6 @@ export default function HeroSection() {
               alignItems: 'center',
               justifyContent: 'center',
               zIndex: 1,
-              transform: 'translateX(-15%)',
             }}
           >
             {/* 照片背景装饰 */}
@@ -87,7 +86,7 @@ export default function HeroSection() {
                 position: 'relative',
                 width: '100%',
                 height: '100%',
-                maxWidth: '450px',
+                maxWidth: '650px',
                 maxHeight: '550px',
                 display: 'flex',
                 alignItems: 'center',
@@ -213,7 +212,7 @@ export default function HeroSection() {
               <Stack direction="row" spacing={2}>
                 <Button
                   component="a"
-                  href="https://github.com"
+                  href="https://github.com/yc09od"
                   target="_blank"
                   startIcon={<GitHub />}
                   sx={{
@@ -229,7 +228,7 @@ export default function HeroSection() {
                 </Button>
                 <Button
                   component="a"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/yanglong-cui-b389a0b7/"
                   target="_blank"
                   startIcon={<LinkedIn />}
                   sx={{
@@ -245,7 +244,7 @@ export default function HeroSection() {
                 </Button>
                 <Button
                   component="a"
-                  href="mailto:your-email@example.com"
+                  href="mailto:yanglongcui@gmail.com"
                   startIcon={<Email />}
                   sx={{
                     color: '#ff6b35',

@@ -40,7 +40,7 @@ const experiences = [
   },
   {
     company: 'Adaptiv Networks',
-    position: 'Full Stack Developer',
+    position: 'Senior application developer',
     period: 'Jan 2017 - Apr 2022',
     duration: '5 yrs 4 mos',
     location: 'Mississauga, Ontario, Canada',

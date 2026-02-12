@@ -9,14 +9,14 @@
   },
   "hero": {
     "title": "Welcome to My World",
-    "subtitle": "Full Stack Developer | Creative Thinker",
+    "subtitle": "Senior application developer | Creative Thinker",
     "description": "I craft beautiful, functional digital experiences.\nWith expertise in modern web technologies,\nI build scalable solutions that drive business success.",
     "cta": "Explore My Work",
     "scroll": "Scroll to discover more"
   },
   "about": {
     "title": "About Me",
-    "description": "I'm Yanglong Cui, a passionate Full Stack Developer with 10 years of experience in building robust web applications. Based in Mississauga, Ontario, Canada, I specialize in creating innovative solutions that bridge the gap between design and functionality.",
+    "description": "I'm Yanglong Cui, a passionate Senior application developer with 10 years of experience in building robust web applications. Based in Mississauga, Ontario, Canada, I specialize in creating innovative solutions that bridge the gap between design and functionality.",
     "features": {
       "codeQuality": {
         "title": "Code Quality",
