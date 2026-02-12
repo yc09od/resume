@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to My World",
+    "subtitle": "Full Stack Developer | Creative Thinker",
+    "description": "I craft beautiful, functional digital experiences.\nWith expertise in modern web technologies,\nI build scalable solutions that drive business success.",
+    "cta": "Explore My Work",
+    "scroll": "Scroll to discover more"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm Yanglong Cui, a passionate Full Stack Developer with 10 years of experience in building robust web applications. Based in Mississauga, Ontario, Canada, I specialize in creating innovative solutions that bridge the gap between design and functionality.",
+    "features": {
+      "codeQuality": {
+        "title": "Code Quality",
+        "description": "Write clean, maintainable and efficient code following best practices."
+      },
+      "modernDesign": {
+        "title": "Modern Design",
+        "description": "Create responsive, visually appealing user interfaces."
+      },
+      "performance": {
+        "title": "High Performance",
+        "description": "Ensure fast loading and smooth user experience."
+      },
+      "innovation": {
+        "title": "Creative Solutions",
+        "description": "Provide intelligent technical solutions to complex problems."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "database": "Database & Data Management",
+    "tools": "Tools & Infrastructure",
+    "data": "Data & Visualization",
+    "languages": "Languages & Methodologies",
+    "otherSkills": "Other Skills"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "current": "Current",
+    "expandMore": "View more",
+    "expandLess": "View less",
+    "skills": "Skills"
+  },
+  "resume": {
+    "title": "My Resume",
+    "description": "Download or view my detailed resume below.",
+    "download": "Download PDF",
+    "preview": "Preview"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Feel free to reach out for collaborations or just a friendly hello!",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    }
+  },
+  "footer": {
+    "rights": "© 2026 Yanglong Cui. All rights reserved.",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "resume": "Resume",
+      "contact": "Contact"
+    }
+  }
+}

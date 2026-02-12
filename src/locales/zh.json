@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "skills": "技能",
+    "experience": "经历",
+    "resume": "简历",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "欢迎来到我的世界",
+    "subtitle": "全栈开发者 | 创意思想家",
+    "description": "我打造优美而功能完整的数字体验。\n凭借现代网络技术的专业知识，\n我构建可扩展的解决方案，推动业务成功。",
+    "cta": "探索我的作品",
+    "scroll": "向下滚动了解更多"
+  },
+  "about": {
+    "title": "关于我",
+    "description": "我是崔阳龙，一位充满热情的全栈开发者，拥有10年的网络应用开发经验。工作地点位于加拿大安大略省密西沙加，我专精于创造创新解决方案，弥合设计与功能之间的鸿沟。",
+    "features": {
+      "codeQuality": {
+        "title": "代码质量",
+        "description": "编写干净、可维护和高效的代码，遵循最佳实践。"
+      },
+      "modernDesign": {
+        "title": "现代设计",
+        "description": "创建响应式、视觉吸引力强的用户界面。"
+      },
+      "performance": {
+        "title": "高性能",
+        "description": "确保快速加载和平滑的用户体验。"
+      },
+      "innovation": {
+        "title": "创意解决方案",
+        "description": "提供聪明的技术解决方案来解决复杂问题。"
+      }
+    }
+  },
+  "skills": {
+    "title": "技能与专业知识",
+    "frontend": "前端开发",
+    "backend": "后端开发",
+    "database": "数据库与数据管理",
+    "tools": "工具与基础设施",
+    "data": "数据与可视化",
+    "languages": "语言与方法论",
+    "otherSkills": "其他技能"
+  },
+  "experience": {
+    "title": "工作经历",
+    "current": "在职",
+    "expandMore": "查看更多",
+    "expandLess": "查看更少",
+    "skills": "技能"
+  },
+  "resume": {
+    "title": "我的简历",
+    "description": "下载或查看我的详细简历。",
+    "download": "下载 PDF",
+    "preview": "预览"
+  },
+  "contact": {
+    "title": "联系我",
+    "description": "欢迎与我联系，无论是合作还是友好的问候！",
+    "form": {
+      "name": "您的姓名",
+      "email": "您的邮箱",
+      "message": "您的消息",
+      "submit": "发送消息",
+      "sending": "发送中...",
+      "success": "消息发送成功！",
+      "error": "发送失败，请重试。"
+    }
+  },
+  "footer": {
+    "rights": "© 2026 崔阳龙。保留所有权利。",
+    "links": {
+      "home": "首页",
+      "about": "关于",
+      "skills": "技能",
+      "experience": "经历",
+      "resume": "简历",
+      "contact": "联系"
+    }
+  }
+}
