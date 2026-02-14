@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Resume Website
 
-## Getting Started
+基于 **Next.js 16 + TypeScript + Material-UI** 构建的个人简历/作品集网站，采用单页应用（SPA）架构，展示个人职业经历与技术能力。
 
-First, run the development server:
+## 核心功能
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **中英文双语支持** — 通过 React Context 实现语言切换，语言偏好持久化于 localStorage
+- **响应式设计** — 移动端优先，适配多种屏幕尺寸，移动端配有抽屉式导航菜单
+- **动画与视觉效果** — 淡入动画、悬浮效果、渐变背景、毛玻璃导航栏等
+- **Docker 容器化部署** — 多阶段构建，使用 Alpine 镜像，以非 root 用户运行
+
+## 页面模块
+
+| 模块       | 说明                                    |
+| ---------- | --------------------------------------- |
+| Hero       | 首屏展示区，含个人头像、简介与 CTA 按钮 |
+| About      | 个人介绍与特色卡片                      |
+| Experience | 工作经历与职责详情                      |
+| Skills     | 技术栈分类展示，带进度条                |
+| Resume     | PDF 简历预览与下载                      |
+| Contact    | 联系方式（GitHub、LinkedIn、Email）     |
+
+## 技术栈
+
+- **框架**: Next.js 16 (App Router) + React 19
+- **语言**: TypeScript 5（严格模式）
+- **UI 库**: Material-UI v7 + Emotion
+- **部署**: Docker + Docker Compose
+- **字体**: Geist（通过 next/font 优化加载）
+
+## 项目结构
+
+```
+├── app/                    # Next.js App Router
+│   ├── components/         # React 组件
+│   ├── layout.tsx          # 根布局
+│   ├── page.tsx            # 主页面
+│   ├── providers.tsx       # Context Providers
+│   └── globals.css         # 全局样式
+├── src/
+│   ├── context/            # 语言切换 Context
+│   ├── locales/            # 中英文翻译文件 (en.json / zh.json)
+│   └── theme.ts            # MUI 主题配置
+├── public/                 # 静态资源（头像、简历 PDF 等）
+├── Dockerfile              # 多阶段 Docker 构建
+└── docker-compose.yml      # Docker Compose 配置
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 快速开始
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 本地开发
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+打开 [http://localhost:3000](http://localhost:3000) 查看效果，修改 `app/page.tsx` 即可实时预览更新。
 
-To learn more about Next.js, take a look at the following resources:
+### Docker 部署
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+docker compose up -d
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+访问 [http://localhost:3001](http://localhost:3001) 查看生产环境效果。
